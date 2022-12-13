@@ -3,8 +3,10 @@ from nudenet import NudeClassifier
 classifier = NudeClassifier()
 
 p1 = classifier.classify("/home/oscar/GitHub/test_nudity_detector/img/images.jpeg")
-p2 = classifier.classify("/home/oscar/GitHub/test_nudity_detector/img/ella.jpg")
+# p2 = classifier.classify("/home/oscar/GitHub/test_nudity_detector/img/ella.jpg")
 
 print(p1)
-print(p2)
+# print(p2)
+
+print(list(p1.values())[0].get("unsafe"))
 
